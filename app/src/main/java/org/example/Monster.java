@@ -28,5 +28,8 @@ public class Monster {
     this.name = monsters[mnumber];
     return monsters[mnumber];
   }
+  public String toString() {
 
+    return megaEvolution() + ":レア度[" + this.rare + "]";
+  }
 }

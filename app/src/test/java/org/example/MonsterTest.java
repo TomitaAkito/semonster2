@@ -4,6 +4,11 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MonsterTest {
+  @Test public void MonsterTostring(){
+    Monster classUnderTest = new Monster();
+    assertEquals(classUnderTest.megaEvolution() + ":レア度[" + classUnderTest.rare + "]", classUnderTest.toString());
+  }
+
   @Test
   public void megaTest() {
     // インスタンス生成
